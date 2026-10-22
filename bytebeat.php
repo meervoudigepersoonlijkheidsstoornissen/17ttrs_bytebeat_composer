@@ -34,7 +34,7 @@ set_exception_handler(function (Throwable $e) {
 function deleteSession(): void {
 	session_unset();
 	session_destroy();
-	setcookie('bytebeat_access', '', time() - 3600, '/');
+	setcookie('bytebeat_access', '', time() - 1800, '/');
 	unset($_COOKIE['bytebeat_access']);
 }
 
