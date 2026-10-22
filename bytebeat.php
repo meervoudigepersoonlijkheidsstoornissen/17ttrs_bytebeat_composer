@@ -513,6 +513,7 @@ function makeManageSongForm(): string {
 							<option value="Signed Bytebeat">Signed Bytebeat</option>
 							<option value="Floatbeat">Floatbeat</option>
 							<option value="Funcbeat">Funcbeat</option>
+							<option value="Dingbeat">Dingbeat</option>
 						</select>
 						<input type="text" name="samplerate" placeholder="Sample rate (Hz)">
 						<label style="white-space: nowrap;"><input type="checkbox" name="stereo"> Stereo</label>
@@ -712,6 +713,8 @@ function makeEditSongForm(): string {
 							($song['mode'] === 'Floatbeat' ? ' selected' : '') . '>Floatbeat</option>
 						<option value="Funcbeat"' .
 							($song['mode'] === 'Funcbeat' ? ' selected' : '') . '>Funcbeat</option>
+												<option value="Floatbeat"' .
+							($song['mode'] === 'Dingbeat' ? ' selected' : '') . '>Dingbeat</option>
 					</select>
 					<input type="text" name="samplerate" value="' .
 						$song['samplerate'] . '" placeholder="Sample rate (Hz)">
